@@ -1,0 +1,6 @@
+all:
+	touch data.txt
+	chmod 600 data.txt
+	gcc -Wall -Wextra -g -o prog main.c
+	chmod u+s prog
+	./prog
